@@ -24,7 +24,7 @@ public class MainWindow : Hdy.Window {
         Object (
             application: app,
             resizable: false,
-            title: "VIDO-NEXT"
+            title: "VIDO"
         );
     }
 
@@ -41,7 +41,7 @@ public class MainWindow : Hdy.Window {
         var header = new Hdy.HeaderBar () {
             show_close_button = true,
             has_subtitle = false,
-            title = "VIDO-NEXT"
+            title = "VIDO"
         };
         header.get_style_context ().add_class (Granite.STYLE_CLASS_DEFAULT_DECORATION);
         header.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
@@ -88,7 +88,7 @@ public class MainWindow : Hdy.Window {
         download_button.margin_top = 10;
         download_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         download_button.get_style_context ().add_class ("downloadbutton");
-        download_button.sensitive = true;
+        download_button.sensitive = false;
 
         var grid = new Gtk.Grid ();
         grid.row_spacing = 6;
@@ -169,7 +169,7 @@ public class MainWindow : Hdy.Window {
             info_button.label = str;
             MainLoop loop = new MainLoop ();
             try {
-                string[] spawn_args = { "yt-dlp", "-e", "--get-duration", "--get-format", "--get-thumbnail", url_input.text };
+                string[] spawn_args = { "yt-dlp", "-e", "--get-duration", "--get-format", url_input.text };
                 string[] spawn_env = Environ.get ();
                 Pid child_pid;
 

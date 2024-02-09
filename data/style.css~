@@ -1,5 +1,5 @@
 url_input, .inputurl {
-	padding: 6px;
+	padding: px;
 	padding-right: 5px;
 	font-size: 12px;
 	font-weight: bold;
