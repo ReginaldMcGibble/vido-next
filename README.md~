@@ -2,8 +2,8 @@
 **A GTK3 Video Downloader**
 
 
-Download online videos from various sources including archive.org and much more! 
-Updated to use yt-dlp instead of youtube-dl. Also some very minor UI tweaks.
+
+Download online videos from various sources including archive.org and much more!
 
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.bernardodsanderson.vido)
 
